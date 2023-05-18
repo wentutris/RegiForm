@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Registration Form</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+<div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo">
+</div>
+    <h2>Employee Registration Form</h2> 
+  <div class="description">
+    <p>Please fill out the form below to complete your registration. An HR department representative will review your submission and contact you with further instructions. Thank you for your cooperation.</p>
+  </div><br>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label>Full Name</label>
+        <div class="two-columns">
+          <div class="column">
+            <input type="text" name="first_name" placeholder="First Name" required>
+          </div>
+          <div class="column">
+            <input type="text" name="last_name" placeholder="Last Name" required>
+          </div>
+        </div>
+      </div>   
+
+  <div class="form-group two-columns">
+    <div class="column">
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+    </div>
+    <div class="column">
+      <label>Gender</label>
+      <select name="gender" required>
+        <option value="selectgender">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="tmale">Transgender Male</option>
+        <option value="female">Female</option>
+        <option value="tfemale">Transgender Female</option>
+        <option value="not-listed">Not Listed</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="example@example.com" required>
+      <span class="sub-label">Please enter a valid email address.</span>
+  </div>
+        
+  <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="000-000-0000" required>
+      <span class="sub-label">Please enter a valid phone number.</span>
+  </div>
+      
+
+
+    <div class="form-group">
+      <label>Address</label>
+        <div class="two-columns">
+          <div class="column">
+              <select name="province" required>
+                <option value="" disabled selected>Select Province</option>
+                   <option value="agusan-del-sur">Agusan del Sur</option>
+                    <option value="bukidnon">Bukidnon</option>
+                    <option value="cagayan">Cagayan</option>
+                    <option value="ilocos-norte">Ilocos Norte</option>
+                    <option value="ilocos-sur">Ilocos Sur</option>
+                    <option value="isabela">Isabela</option>
+                    <option value="laguna">Laguna</option>
+                    <option value="leyte">Leyte</option>
+                    <option value="maguindanao">Maguindanao</option>
+                    <option value="marinduque">Marinduque</option>
+                    <option value="masbate">Masbate</option>
+                    <option value="metro-manila">Metro Manila</option>
+                    <option value="misamis-occidental">Misamis Occidental</option>
+                    <option value="misamis-oriental">Misamis Oriental</option>
+                    <option value="mountain-province">Mountain Province</option>
+                    <option value="negros-occidental">Negros Occidental</option>
+                    <option value="negros-oriental">Negros Oriental</option>
+                    <option value="northern-samar">Northern Samar</option>
+                    <option value="nueva-ecija">Nueva Ecija</option>
+                    <option value="nueva-vizcaya">Nueva Vizcaya</option>
+                    <option value="occidental-mindoro">Occidental Mindoro</option>
+                    <option value="oriental-mindoro">Oriental Mindoro</option>
+                    <option value="palawan">Palawan</option>
+                    <option value="pampanga">Pampanga</option>
+                    <option value="pangasinan">Pangasinan</option>
+                    <option value="quezon">Quezon</option>
+                    <option value="quirino">Quirino</option>
+                    <option value="rizal">Rizal</option>
+                    <option value="romblon">Romblon</option>
+                    <option value="samar">Samar</option>
+                    <option value="sarangani">Sarangani</option>
+                    <option value="siquijor">Siquijor</option>
+                    <option value="sorsosgon">Sorsogon</option>
+                    <option value="south-cotabato">South Cotabato</option>
+                    <option value="southern-leyte">Southern Leyte</option>
+                    <option value="sultan-kudarat">Sultan Kudarat</option>
+                    <option value="sulu">Sulu</option>
+                    <option value="surigao-del-norte">Surigao del Norte</option>
+                    <option value="surigao-del-sur">Surigao del Sur</option>
+                    <option value="tarlac">Tarlac</option>
+              </select>
+          </div>
+          <div class="column">
+              <select name="city" required>
+                <option value="" disabled selected>Select City/ Municipality</option>
+              </select>
+          </div>
+          </div> <br>
+        <div class="form-group">
+          <input type="text" name="street_address" placeholder="Street Address" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="postal_code" placeholder="Postal Code" required>
+        </div>
+  </div>
+      
+  <div class="form-group">
+      <label>Applying Position</label>
+      <input type="text" name="position" placeholder="Type here..." required>
+  </div>
+      <div class="form-group">
+        <label>Type of Work</label>
+        <select name="type_of_work" required>
+	        <option value="worktype">Select Type of Work</option>
+          <option value="permanent">Permanent</option>
+          <option value="temporary">Temporary</option>
+          <option value="both">Both</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Veteran Status</label>
+        <select name="veteran_status" required>
+	        <option value="vstatus">Select Veteran Status</option>
+          <option value="one">I am a veteran</option>
+          <option value="two">I am a recently separated vetern</option>
+          <option value="three">I am not a veteran</option>
+          <option value="four">I am special disabled veteran</option>
+          <option value="five">I am an other protected veteran</option>
+          <option value="six">Prefer not to say</option>
+        </select>
+      </div>
+
+  <div class="form-group">
+      <label>Disabilities</label>
+      <div class="radio-group two-columns">
+        <label><input type="radio" name="disabilities" value="none"> I have no disability</label>
+        <label><input type="radio" name="disabilities" value="multiple"> I have two or more impairments and/or disabling medical conditions</label>
+        <label><input type="radio" name="disabilities" value="learning"> I have a Specific Learning Difficulty (e.g., Dyslexia/Dyspraxia/ADHD)</label>
+        <label><input type="radio" name="disabilities" value="autism"> I have a social/communication impairment such as Asperger's syndrome/other autistic spectrum disorder</label>
+        <label><input type="radio" name="disabilities" value="long-standing"> I have a long-standing illness or health condition such as cancer, HIV, diabetes, chronic heart disease, or epilepsy</label>
+        <label><input type="radio" name="disabilities" value="physical"> I have a physical impairment or mobility issues (e.g., difficulty using arms/using a wheelchair or crutches)</label>
+        <label><input type="radio" name="disabilities" value="deaf"> I am deaf or have a serious hearing impairment</label>
+        <label><input type="radio" name="disabilities" value="blind"> I am blind or have a serious visual impairment uncorrected by glasses</label>
+        <label><input type="radio" name="disabilities" value="not-listed"> I have a disability, impairment, or medical condition not listed here</label>
+        <label><input type="radio" name="disabilities" value="prefer-not-to-answer"> Prefer not to answer</label>
+      </div>
+</div>
+
+    <label>Please Upload Resume</label>
+     <div class="upload-section" id="drop-area">
+  <h3>Browse Files</h3>
+  <p style="font-size: 14px; color: #ccc;">Drag and drop a file here.</p>
+  <input type="file" id="file-upload" onchange="updateFileName()" />
+  <span class="file-name"></span>
+  <span class="remove-file" onclick="removeFile()" id="remove-file" style="display: none;">&#10006;</span>
+</div> <Br>
+
+
+    <div class="form-group">
+        <label>Cover Letter or Additional Information </label>
+        <textarea name="cover_letter" rows="5" placeholder="Type here..."  required></textarea>
+    </div>
+
+    <div class="disclaimer">
+      <p>Please note that all information submitted in this form will be kept confidential and used only for the purpose of processing your application.</p>
+    </div>
+
+      <div class="form-group submit-button">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
